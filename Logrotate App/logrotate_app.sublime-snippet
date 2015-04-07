@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+logrotate_app '${1:myapp}' do
+	path      '${2:/var/log/myapp/myapp.log}'
+  frequency '${3:daily}'
+  rotate    ${4:30}
+  create    '${5:644 root root}'
+end
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>logrotate_app</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+	<description>logrotate_app</description>
+</snippet>
