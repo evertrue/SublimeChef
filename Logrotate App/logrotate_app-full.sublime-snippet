@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 logrotate_app '${1:myapp}' do
-	path      ${2:['/var/log/myapp/myapp.stdout.log','/var/log/myapp/myapp.stderr.log']}
+  path      ${2:['/var/log/myapp/myapp.stdout.log','/var/log/myapp/myapp.stderr.log']}
   size      '${3:100M}'
   rotate    ${4:30}
   create    '${5:644 root root}'
